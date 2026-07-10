@@ -1,0 +1,78 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .principal {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            width: 100%;
+            border: solid 3px rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (min-width: 500px) {
+            .principal {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .principal {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .principal {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        h1{
+            padding: 18px ;
+            font-family: Arial, Helvetica, sans-serif;
+            color: darkorange;
+        }
+
+        body{
+            background-color: rgb(43, 177, 226);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Galeria de fotos</h1>
+    <div class="principal">
+
+        <div class="card"> <h1>Linkin Park</h1><img src="https://cdn-images.dzcdn.net/images/cover/033a271b5ec10842c287827c39244fb5/1900x1900-000000-80-0-0.jpg" 
+            alt="linkin park" width="200">
+            
+            </div>
+        <div class="card">  
+            <h1>Guns Roses</h1><img src="https://yt3.googleusercontent.com/NOffjBzduuBi233oo3u5e_GZw_dPN4PqWEdOn0neHj-rEzTd4KurXRQInExaMOhhFK-fU2rBMw=s900-c-k-c0x00ffffff-no-rj"
+             alt="Guns roses " width="200"></div>
+        <div class="card"> <h1>Nirvana</h1><img src="https://m.media-amazon.com/images/I/51hmhlRCfEL._UF1000,1000_QL80_.jpg" 
+            alt="Nirvana" width="200"></div>
+        <div class="card"> <h1>ACDC</h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFw-hHxEbyehmvgGIC9IAbS_mHkZRn2BYOeA3s3fjw0g5IOTBXky-QeET6&s=10"
+             alt="ACDC" width="200"></div>
+        <div class="card"> <h1>OASIS</h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNPNVBHDVu2KyghQhR72AXFsC2nPgdd399Tc7rbghDe-NRdL4ZYDiOMdOC&s=10" 
+            alt="OASIS" width="200"></div>
+
+    </div>
+    
+</body>
+</html>
